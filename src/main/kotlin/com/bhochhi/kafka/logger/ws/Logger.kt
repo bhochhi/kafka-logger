@@ -16,10 +16,10 @@ class LogController{
 
 
     /**
-     * Get the details about available topics
+     * Get the list of topics available in cluster
      */
-    @GetMapping("topics/{name}")
-    fun getTopics(@PathVariable name: String) = listTopics(name)
+    @GetMapping("topics")
+    fun getTopics() = listTopics()
 }
 
 
