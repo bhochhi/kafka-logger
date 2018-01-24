@@ -45,3 +45,7 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+springBoot {
+	mainClassName = 'com.bhochhi.kafka.logger.KafkaLoggerApplication'
+}
